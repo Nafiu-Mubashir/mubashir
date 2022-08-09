@@ -1,15 +1,9 @@
-/**
-* Template Name: Personal - v4.8.1
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+* {
+  /* outline: 1px solid silver; */
+}
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Caudex', serif;
   background-color: #040404;
   color: #fff;
   position: relative;
@@ -50,7 +44,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Caudex", serif;
+  /* font-family: 'Libre Franklin', sans-serif; */
 }
 
 /*--------------------------------------------------------------
@@ -76,7 +72,7 @@ h6 {
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
+  font-family: "Caudex", serif;
 }
 
 #header h1 a,
@@ -404,7 +400,7 @@ section .container {
 --------------------------------------------------------------*/
 .about-me .content h3 {
   font-weight: 700;
-  font-size: 26px;
+  /* font-size: 26px; */
   color: #18d26e;
 }
 
@@ -421,6 +417,11 @@ section .container {
 
 .about-me .content ul strong {
   margin-right: 10px;
+}
+
+.about-me .content p {
+  /* font-family: "Poppins", sans-serif; */
+  font-weight: 400;
 }
 
 .about-me .content ul i {
