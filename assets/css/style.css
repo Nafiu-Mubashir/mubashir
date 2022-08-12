@@ -3,6 +3,11 @@
   cursor: none !important;
 }
 
+.darkmode-layer,
+.darkmode-toggle {
+  z-index: 500;
+}
+
 .cursor {
   z-index: 1000;
   position: absolute;
@@ -41,13 +46,13 @@
 
 @keyframes click {
   0% {
-      opacity: 1;
-      transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
   }
 
   100% {
-      opacity: 0;
-      transform: translate(-50%, -50%) scale(7);
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(7);
   }
 }
 
@@ -708,6 +713,7 @@ section .container {
   /* font-size: 1.2em; */
   /* font-family: "Poppins", sans-serif; */
 }
+
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 18px;
