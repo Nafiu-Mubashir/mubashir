@@ -861,6 +861,43 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <!-- Add this script just before your closing </body> tag -->
+<script>
+// Simple solution to handle hash navigation on page refresh
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to handle hash navigation
+    function handleHashNavigation() {
+        if (window.location.hash) {
+            const targetSection = document.querySelector(window.location.hash);
+            if (targetSection) {
+                // Small delay to ensure page is fully loaded
+                setTimeout(() => {
+                    targetSection.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Update active nav link
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    
+                    const activeLink = document.querySelector(`a.nav-link[href="${window.location.hash}"]`);
+                    if (activeLink) {
+                        activeLink.classList.add('active');
+                    }
+                }, 200);
+            }
+        }
+    }
+    
+    // Handle initial page load
+    handleHashNavigation();
+    
+    // Handle hash changes (when user clicks nav links)
+    window.addEventListener('hashchange', handleHashNavigation);
+});
+</script>
 
 </body>
 
